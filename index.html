@@ -3,14 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abir Roy</title>
+    <title>System Breach Detected</title>
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            padding-top: 200px;
+        }
+        .glitch {
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px red, -2px -2px blue;
+        }
+    </style>
     <script>
         window.onload = function() {
-            alert("Your PC is hacked !!");
+            setTimeout(function() {
+                alert("WARNING: Your system has been hacked!");
+            }, 500); // Small delay to allow page to load first
+
+            document.body.innerHTML += "<h2 class='glitch'>All your data belongs to us !</h2>";
+            setTimeout(function() {
+                document.body.innerHTML += "<h3 class='glitch'>Just Kidding 💀</h3>";
+            }, 1000);
         };
     </script>
 </head>
 <body>
-    <h1>Hi I am Abir Roy, Welcome to the my website !</h1>
+    <h1 class="glitch">SYSTEM BREACH DETECTED</h1>
 </body>
 </html>
